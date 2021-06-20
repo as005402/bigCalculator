@@ -145,10 +145,10 @@ namespace bigCalculator
             string val1 = byteArrToStr(v1);
             string answ = "";
 
-            byte[] valToDiv = strToByteArr(val1.Substring(0, d2));
+            byte[] valToDiv = strToByteArr(val1.Substring(0, d1 > d2 ? d2 : d1));
             byte[] checkZero = { 0 }; //just 'cause im too lazy
-            val1 = val1.Substring(d2);
-            if (compare(valToDiv, v2) == -1) { valToDiv = strToByteArr(byteArrToStr(valToDiv) + val1[0]); val1 = val1.Substring(1); }
+            val1 = val1.Substring(d1 > d2 ? d2 : d1);
+            if (compare(valToDiv, v2) == -1 && d1 > d2) { valToDiv = strToByteArr(byteArrToStr(valToDiv) + val1[0]); val1 = val1.Substring(1); }
 
             while (val1 != "" || compare(valToDiv, v2) != -1)
             {
@@ -160,7 +160,10 @@ namespace bigCalculator
 
                 i = 0;
             }
+
+            if (answ.Length == 0) answ = "0";
             int current = answ.Length;
+
 
             if (compare(valToDiv, checkZero) != 0)
             {

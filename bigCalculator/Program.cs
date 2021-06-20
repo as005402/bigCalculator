@@ -9,15 +9,15 @@ namespace bigCalculator
             Console.WriteLine("It's a simple calculator for really big numbers, so it can operate only with non-negative numbers :(");
             Console.WriteLine("Enter expression to solve:\t\t(Available operations: + - * /)");
             string exp = Console.ReadLine();
-            try
-            {
+            //try
+            //{
                 calculator c = new calculator(exp);
                 Console.WriteLine($"Answer: {c}");
-            }
-            catch
+            /*}
+            catch (Exception e)
             {
-                Console.WriteLine("Something went wrong......");
-            }
+                Console.WriteLine($"Something went wrong......\n{e.Message}");
+            }*/
             
         }
     }
