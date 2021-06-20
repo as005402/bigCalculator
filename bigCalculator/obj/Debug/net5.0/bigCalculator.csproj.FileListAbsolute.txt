@@ -1,0 +1,16 @@
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.exe
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.deps.json
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.runtimeconfig.json
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.runtimeconfig.dev.json
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.dll
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\ref\bigCalculator.dll
+D:\studying\#\bigCalculator\bigCalculator\bin\Debug\net5.0\bigCalculator.pdb
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.csprojAssemblyReference.cache
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.AssemblyInfoInputs.cache
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.AssemblyInfo.cs
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.csproj.CoreCompileInputs.cache
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.dll
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\ref\bigCalculator.dll
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.pdb
+D:\studying\#\bigCalculator\bigCalculator\obj\Debug\net5.0\bigCalculator.genruntimeconfig.cache
