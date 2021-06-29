@@ -57,9 +57,9 @@ namespace bigCalculator
                 {
                     Array.Resize(ref res, res.Length + 1);
                     res[i] = (byte)((v1[i] + v2[i] + temp) % 100);
-                    temp = (byte)((v1[i] + v2[i]) / 100);
-
-                } else
+                    temp = (byte)((v1[i] + v2[i] + temp) / 100);
+                }
+                else
                 {
                     Array.Resize(ref res, res.Length + 1);
                     res[i] = (byte)((temp + v1[i]) % 100);
@@ -86,9 +86,8 @@ namespace bigCalculator
                 {
                     Array.Resize(ref res, res.Length + 1);
 
-                    res[i] = (byte)(v1[i] >= v2[i] ? v1[i] - v2[i] - temp : v1[i] + 100 - v2[i] - temp);
-                    temp = (byte)(v1[i] >= v2[i] ? 0 : 1);
-
+                    res[i] = (byte)(v1[i] - temp >= v2[i] ? v1[i] - v2[i] - temp : v1[i] + 100 - v2[i] - temp);
+                    temp = (byte)(v1[i] - temp >= v2[i] ? 0 : 1);
                 }
                 else
                 {
@@ -118,9 +117,10 @@ namespace bigCalculator
                 zero = String.Concat(Enumerable.Repeat("0", z++));
                 t2 = strToByteArr(byteArrToStr(simpleMult(v1, (byte)(v2[0] / 10))) + zero);
 
-                temp1 = add(t2, t1);
+                temp1 = compare(t1, t2) != -1 ? add(t1, t2) : (add(t2, t1));
+
             }
-            
+
             for (int i = 1; i < v2.Length; i++)
             {
                 zero = String.Concat(Enumerable.Repeat("0", z++));
